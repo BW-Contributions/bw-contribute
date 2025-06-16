@@ -134,6 +134,7 @@ section > p {
     flex-wrap: wrap;
 }
 
+/* --- Find this rule in your style.css --- */
 .donation-button {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
@@ -146,8 +147,15 @@ section > p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 20px rgba(255, 109, 0, 0.4);
     display: flex;
-    flex-direction: column;
+    /* --- CHANGE THIS TO: --- */
+    flex-direction: row; /* Changed from column for better icon alignment */
     align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+/* --- ADD THIS NEW RULE --- */
+.donation-button i {
+    margin-right: 10px; /* Add space between the icon and the text */
 }
 
 .donation-button:hover {
@@ -155,10 +163,13 @@ section > p {
     box-shadow: 0 7px 25px rgba(255, 109, 0, 0.5);
 }
 
+/* --- Find this rule in your style.css --- */
 .donation-button .subtext {
     font-size: 0.8rem;
     font-weight: 400;
     opacity: 0.8;
+    /* --- ADD THIS LINE --- */
+    margin-left: 8px; /* Add space between the price and the subtext */
 }
 
 .donation-button.custom-amount {
