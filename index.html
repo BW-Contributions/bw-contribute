@@ -1,32 +1,252 @@
-<h2>Our Vision for BiteWorth's Future</h2>
-<p>Your generous support helps us work towards exciting new features like these:</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support BiteWorth Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<div class="feature-card">
-    <h3>Nara Gym 🏋️‍♀️</h3>
-    <p>A gym workout planner and tracker that integrates with BiteWorth's nutritional analysis to help you fuel your fitness goals.</p>
-</div>
+    <div class="container">
+        <header>
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-ai-robotics-flaticons-lineal-color-flat-icons-3.png" alt="Nara Icon" class="logo">
+            <h1>Support BiteWorth's Future</h1>
+            <p class="intro">
+                BiteWorth is a passion project dedicated to helping you make informed dining decisions. Your generous support allows for continued development, server upkeep, and the creation of exciting new AI-powered features.
+            </p>
+        </header>
 
-<div class="feature-card">
-    <h3>Nara Diet 🥗</h3>
-    <p>A comprehensive diet tracker to monitor calories, macros, water, and caffeine, seamlessly linked with your menu scans and meal plans.</p>
-</div>
+        <section class="features">
+            <h2>Our Vision for Future Features</h2>
+            <p>Your contribution will support future development of the following features:</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🏋️‍♀️ Nara Gym</h3>
+                    <p>A workout planner and tracker integrated with nutritional insights to help you fuel your fitness goals.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🥗 Nara Diet</h3>
+                    <p>A comprehensive diet tracker to monitor calories, macros, water, and caffeine, seamlessly linked with your menu scans.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Nara Deals</h3>
+                    <p>Let Nara find the best local restaurant deals and coupons for you, saving you money on your meals out.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📞 Nara Booking (Ambitious AI)</h3>
+                    <p>An advanced AI version of Nara will make restaurant reservation calls or online bookings for you.</p>
+                </div>
+                 <div class="feature-card">
+                    <h3>🛒 Nara Pantry & Shopping</h3>
+                    <p>Manage your pantry inventory and let Nara generate smart shopping lists based on your planned meals.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧑‍🍳 Nara Recipe Finder</h3>
+                    <p>Discover recipes based on ingredients you have, your dietary needs, or cuisine preferences.</p>
+                </div>
+            </div>
+        </section>
 
-<div class="feature-card">
-    <h3>Nara Deals 💰</h3>
-    <p>Let Nara find the best local restaurant deals, discounts, and coupon codes for you, saving you money on your meals out.</p>
-</div>
+        <section class="donation">
+            <h2>Make a Contribution</h2>
+            <p>Choose an amount below or enter your own. Every bit helps!</p>
+            <div class="donation-options">
+                <!-- IMPORTANT: Replace the '#' with your actual Stripe Payment Links from Part 1 -->
+                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£2.00</a>
+                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£5.00</a>
+                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£10.00</a>
+                <a href="https://buy.stripe.com/test_..." class="donation-button custom-amount" target="_blank" rel="noopener noreferrer">Custom Amount</a>
+            </div>
+        </section>
 
-<div class="feature-card">
-    <h3>Nara Booking 📞</h3>
-    <p>Nara can automatically call and book a table at your favorite restaurant for your specified group size and time. (Ambitious AI feature!)</p>
-</div>
+        <footer>
+            <p class="disclaimer">
+                Note: Contributions are voluntary and support ongoing development. They do not currently unlock additional in-app features or benefits. Thank you for your generosity!
+            </p>
+            <p class="back-to-app">
+                Return to BiteWorth
+            </p>
+        </footer>
+    </div>
 
-<div class="feature-card">
-    <h3>Nara Pantry & Shopping 🛒</h3>
-    <p>Manage your pantry inventory and let Nara generate smart shopping lists based on your planned meals or recipes.</p>
-</div>
+</body>
+</html>
 
-<div class="feature-card">
-    <h3>Nara Recipe Finder 🧑‍🍳</h3>
-    <p>Discover recipes based on ingredients you have, dietary needs, or cuisine preferences, with nutritional insights from Nara.</p>
-</div>
+/* General Styling */
+:root {
+    --primary-color: #FF6D00; /* BiteWorth Orange */
+    --dark-text: #212121;
+    --light-text: #757575;
+    --bg-color: #FAFAFA;
+    --card-bg: #FFFFFF;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--dark-text);
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--light-text);
+    font-size: 1.1rem;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    color: var(--dark-text);
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Donation Section */
+.donation {
+    margin-top: 3rem;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.donation-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.donation-button:hover {
+    background-color: #e66000;
+    transform: scale(1.05);
+}
+
+.donation-button.custom-amount {
+    background-color: #333;
+}
+
+.donation-button.custom-amount:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+}
+
+.disclaimer {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #9e9e9e;
+    max-width: 500px;
+    margin: 0 auto 1rem auto;
+}
+
+.back-to-app {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .donation-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-button {
+        width: 80%;
+        max-width: 300px;
+    }
+}
