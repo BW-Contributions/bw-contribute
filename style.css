@@ -1,0 +1,222 @@
+/* --- General Styling --- */
+:root {
+    --primary-color: #FF6D00; /* BiteWorth Orange */
+    --secondary-color: #6D28D9; /* Deep Purple */
+    --dark-text: #1f2937;
+    --light-text: #6b7280;
+    --bg-color: #f9fafb;
+    --card-bg: #FFFFFF;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --card-shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+}
+
+section > p {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    color: #fff;
+    text-align: center;
+    padding: 5rem 20px;
+}
+
+.hero-content lottie-player {
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 1rem 0;
+}
+
+.hero-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 1rem auto 0 auto;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* --- Features Section --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.feature-card .icon-bg {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, rgba(255, 109, 0, 0.1), rgba(109, 40, 217, 0.1));
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card .icon-bg i {
+    font-size: 1.75rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-card h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    color: var(--dark-text);
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: var(--light-text);
+}
+
+/* --- Donation Section --- */
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.donation-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 15px 35px;
+    border-radius: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 20px rgba(255, 109, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 7px 25px rgba(255, 109, 0, 0.5);
+}
+
+.donation-button .subtext {
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.donation-button.custom-amount {
+    background: linear-gradient(45deg, #4b5563, #1f2937);
+    box-shadow: 0 4px 20px rgba(50, 50, 50, 0.3);
+}
+.donation-button.custom-amount:hover {
+    box-shadow: 0 7px 25px rgba(50, 50, 50, 0.4);
+}
+
+.donation-button.custom-amount i {
+    margin-right: 8px;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+}
+
+.disclaimer i {
+    margin-right: 5px;
+}
+
+.made-with-love {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .donation-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
