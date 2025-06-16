@@ -3,250 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support BiteWorth Development</title>
+    <title>Support the Future of BiteWorth</title>
+    
+    <!-- Local CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Lottie Player (for robot animation) -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- ScrollReveal.js (for scroll animations) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <div class="hero">
+        <div class="hero-content">
+            <!-- Lottie Animation Player -->
+            <lottie-player src="assets/robot-lottie.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <h1 class="hero-title">Help Build BiteWorth's Future</h1>
+            <p class="hero-subtitle">BiteWorth is a passion project dedicated to helping you make smarter dining decisions. Your generous contribution fuels our mission, supports server costs, and brings incredible new features to life. Join us on this journey!</p>
+        </div>
+    </div>
 
     <div class="container">
-        <header>
-            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-ai-robotics-flaticons-lineal-color-flat-icons-3.png" alt="Nara Icon" class="logo">
-            <h1>Support BiteWorth's Future</h1>
-            <p class="intro">
-                BiteWorth is a passion project dedicated to helping you make informed dining decisions. Your generous support allows for continued development, server upkeep, and the creation of exciting new AI-powered features.
-            </p>
-        </header>
-
         <section class="features">
-            <h2>Our Vision for Future Features</h2>
-            <p>Your contribution will support future development of the following features:</p>
+            <h2>Our Vision for What's Next <i class="fa-solid fa-rocket"></i></h2>
+            <p>Your contribution directly supports the research and development of these ambitious features:</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🏋️‍♀️ Nara Gym</h3>
-                    <p>A workout planner and tracker integrated with nutritional insights to help you fuel your fitness goals.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>Nara Gym</h3>
+                    <p>An integrated workout planner that syncs with your nutritional data to help you perfectly fuel your fitness goals.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🥗 Nara Diet</h3>
-                    <p>A comprehensive diet tracker to monitor calories, macros, water, and caffeine, seamlessly linked with your menu scans.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3>Nara Diet</h3>
+                    <p>A comprehensive diet tracker for calories, macros, water, and caffeine, seamlessly linked with your menu scans.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>💰 Nara Deals</h3>
-                    <p>Let Nara find the best local restaurant deals and coupons for you, saving you money on your meals out.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-tags"></i></div>
+                    <h3>Nara Deals</h3>
+                    <p>Let Nara find the best local restaurant deals and coupons, saving you money while you enjoy great food.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📞 Nara Booking (Ambitious AI)</h3>
-                    <p>An advanced AI version of Nara will make restaurant reservation calls or online bookings for you.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Nara Booking</h3>
+                    <p>An advanced AI that will make restaurant reservation calls or online bookings on your behalf. The future is now!</p>
                 </div>
                  <div class="feature-card">
-                    <h3>🛒 Nara Pantry & Shopping</h3>
-                    <p>Manage your pantry inventory and let Nara generate smart shopping lists based on your planned meals.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-basket-shopping"></i></div>
+                    <h3>Nara Pantry</h3>
+                    <p>Manage your home inventory and get smart shopping lists so you always know what you need for your next meal.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🧑‍🍳 Nara Recipe Finder</h3>
-                    <p>Discover recipes based on ingredients you have, your dietary needs, or cuisine preferences.</p>
+                    <div class="icon-bg"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Nara Recipes</h3>
+                    <p>Discover recipes based on ingredients you have, dietary needs, or cuisine preferences, with nutritional insights.</p>
                 </div>
             </div>
         </section>
 
         <section class="donation">
-            <h2>Make a Contribution</h2>
-            <p>Choose an amount below or enter your own. Every bit helps!</p>
+            <h2>Make a Contribution <i class="fa-solid fa-hand-holding-dollar"></i></h2>
+            <p>Every contribution, big or small, makes a huge difference. Choose an option below to show your support!</p>
             <div class="donation-options">
-                <!-- IMPORTANT: Replace the '#' with your actual Stripe Payment Links from Part 1 -->
-                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£2.00</a>
-                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£5.00</a>
-                <a href="https://buy.stripe.com/test_..." class="donation-button" target="_blank" rel="noopener noreferrer">£10.00</a>
-                <a href="https://buy.stripe.com/test_..." class="donation-button custom-amount" target="_blank" rel="noopener noreferrer">Custom Amount</a>
+                <!-- IMPORTANT: Replace the '#' with your actual Stripe Payment Links -->
+                <a href="https://buy.stripe.com/test_3cI28qbtKg3gar3cJQafS00" class="donation-button" target="_blank" rel="noopener noreferrer">£2 <span class="subtext">A Coffee</span></a>
+                <a href="https://buy.stripe.com/test_6oUaEWfK0eZcfLn4dkafS01" class="donation-button" target="_blank" rel="noopener noreferrer">£5 <span class="subtext">A Pastry</span></a>
+                <a href="https://buy.stripe.com/test_3cI00ifK004i1Ux8tAafS03" class="donation-button" target="_blank" rel="noopener noreferrer">£10 <span class="subtext">A Meal</span></a>
+                <a href="https://buy.stripe.com/test_eVqbJ07dueZc9mZcJQafS04" class="donation-button custom-amount" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gift"></i> Custom Amount</a>
             </div>
         </section>
 
         <footer>
             <p class="disclaimer">
-                Note: Contributions are voluntary and support ongoing development. They do not currently unlock additional in-app features or benefits. Thank you for your generosity!
+                <i class="fa-solid fa-circle-info"></i>
+                Contributions are voluntary and support ongoing development. They do not unlock any current or future in-app features or benefits. Thank you for your incredible generosity!
             </p>
-            <p class="back-to-app">
-                Return to BiteWorth
+            <p class="made-with-love">
+                Made with <i class="fa-solid fa-heart" style="color: #e91e63;"></i> by a solo developer.
             </p>
         </footer>
     </div>
 
+    <!-- Local JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-
-/* General Styling */
-:root {
-    --primary-color: #FF6D00; /* BiteWorth Orange */
-    --dark-text: #212121;
-    --light-text: #757575;
-    --bg-color: #FAFAFA;
-    --card-bg: #FFFFFF;
-    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: var(--bg-color);
-    color: var(--dark-text);
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: var(--dark-text);
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    color: var(--light-text);
-    font-size: 1.1rem;
-}
-
-.intro {
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1rem;
-}
-
-/* Features Section */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 2rem;
-    text-align: left;
-}
-
-.feature-card {
-    background-color: var(--card-bg);
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.feature-card h3 {
-    margin-top: 0;
-    color: var(--dark-text);
-}
-
-.feature-card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* Donation Section */
-.donation {
-    margin-top: 3rem;
-}
-
-.donation-options {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.donation-button {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--primary-color);
-    padding: 12px 28px;
-    border-radius: 50px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    display: inline-block;
-}
-
-.donation-button:hover {
-    background-color: #e66000;
-    transform: scale(1.05);
-}
-
-.donation-button.custom-amount {
-    background-color: #333;
-}
-
-.donation-button.custom-amount:hover {
-    background-color: #555;
-}
-
-/* Footer */
-footer {
-    margin-top: 4rem;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 2rem;
-}
-
-.disclaimer {
-    font-size: 0.85rem;
-    font-style: italic;
-    color: #9e9e9e;
-    max-width: 500px;
-    margin: 0 auto 1rem auto;
-}
-
-.back-to-app {
-    font-size: 0.9rem;
-    color: var(--light-text);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    .donation-options {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .donation-button {
-        width: 80%;
-        max-width: 300px;
-    }
-}
